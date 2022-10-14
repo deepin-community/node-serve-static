@@ -1,0 +1,1 @@
+mocha -C --timeout 10000 --bail --check-leaks --require should
