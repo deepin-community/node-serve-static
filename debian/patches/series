@@ -1,1 +1,2 @@
 disable-one-error-test.diff
+fix-for-recent-urlparse.patch
