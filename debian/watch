@@ -1,5 +1,10 @@
-version=3
+version=4
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-serve-static-$1.tar.gz/ \
- https://github.com/expressjs/serve-static/tags .*/archive/v?([\d\.]+).tar.gz
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-serve-static-$1/ \
+ https://github.com/expressjs/serve-static/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-serve-static,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-serve-static-$1/" \
+ https://registry.npmjs.org/@types/serve-static https://registry.npmjs.org/@types/serve-static/-/serve-static-([\d\.]+)@ARCHIVE_EXT@ group

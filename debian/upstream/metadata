@@ -1,7 +1,6 @@
 ---
 Archive: GitHub
 Bug-Database: https://github.com/expressjs/serve-static/issues
-Contact: https://github.com/expressjs/serve-static/issues
-Name: serve-static
+Bug-Submit: https://github.com/expressjs/serve-static/issues/new
 Repository: https://github.com/expressjs/serve-static.git
 Repository-Browse: https://github.com/expressjs/serve-static

@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: serve-static
 Upstream-Contact: https://github.com/expressjs/serve-static/issues
 Source: https://github.com/expressjs/serve-static
+ https://registry.npmjs.org/@types/serve-static
 
 Files: *
 Copyright: 2010 Sencha Inc.
@@ -12,6 +13,10 @@ License: Expat
 
 Files: debian/*
 Copyright: 2014 Leo Iannacone <l3on@ubuntu.com>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
